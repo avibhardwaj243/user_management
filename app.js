@@ -97,18 +97,6 @@ app.use(methodOverride(function (req, res) {
 var flash = require('express-flash')
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
-
-/**
- * This module shows flash messages
- * generally used to show success or error messages
- * 
- * Flash messages are stored in session
- * So, we also have to install and use 
- * cookie-parser & session modules
- */ 
-var flash = require('express-flash');
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
  
 app.use(cookieParser('keyboard cat'));
 app.use(session({ 
